@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Congress Bridge Creative | Web Design & Development</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo-text">CONGRESS BRIDGE <span>CREATIVE</span></div>
+            <ul class="nav-links">
+                <li><a href="#services">Services</a></li>
+                <li><a href="#work">Our Work</a></li>
+                <li><a href="#contact" class="btn-primary">Get In Touch</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-container container">
+            <div class="hero-content">
+                <span class="badge">Modern Web Design</span>
+                <h1>Helping Small Businesses Build Trust Online.</h1>
+                <p>A poorly designed website makes potential customers hesitate. We build clean, fast, modern informational websites that show people you mean business and get them to reach out.</p>
+                <div class="hero-cta">
+                    <a href="#contact" class="btn-primary">Start Your Project</a>
+                    <a href="#services" class="btn-secondary">What We Do</a>
+                </div>
+            </div>
+            <div class="hero-logo-zone">
+                <img src="media/CongressBridgeCreativeLogo.PNG" alt="Congress Bridge Creative Logo" class="floating-logo">
+            </div>
+        </div>
+    </header>
+
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Services</h2>
+                <p>We focus on high-quality frontend design that makes your business stand out.</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>Custom Web Design</h3>
+                    <p>Tailored layouts designed specifically around your brand identity. No generic templates that look like your competitors.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Mobile Optimization</h3>
+                    <p>Most people look at websites from their phones. We ensure your site looks flawless and loads quickly on every device.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Digital Credibility</h3>
+                    <p>We structure your content, reviews, and images so that cold traffic instantly feels confident calling or booking your services.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="work" class="portfolio">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Work</h2>
+                <p>Check out some of our design concepts and active builds.</p>
+            </div>
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <img src="media/websitescale.png" alt="Local Business Concept" class="port-img-mock">
+                    <div class="port-info">
+                        <h4>Service Business Site</h4>
+                        <p>Clean, high-converting informational landing page.</p>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <img src="media/Portfolio.png" alt="Portfolio Design Concept" class="port-img-mock">
+                    <div class="port-info">
+                        <h4>Creative Studio Page</h4>
+                        <p>Modern dark-aesthetic layout focused on strong visuals.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-pitch">
+                    <h2>Let's Talk About Your Project</h2>
+                    <p>Every business needs something a little different. Instead of locking you into a rigid pricing package, we offer custom quotes tailored entirely to your goals and budget.</p>
+                    <p class="discount-note"><strong>Note:</strong> Reach out today to tell us about your business, and we'll apply an introductory discount to your project scope.</p>
+                </div>
+                <div class="contact-form-container">
+                    <form id="leadForm" class="contact-form">
+                        <input type="hidden" name="access_key" value="767cf9de-5b37-4285-afa8-e82d5ba157d3">
+                        
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" name="name" required placeholder="John Doe">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" required placeholder="john@example.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="bizname">Business Name / Industry</label>
+                            <input type="text" id="bizname" name="business_name" placeholder="e.g., Landscaping, Local Shop">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Tell us a bit about what you need:</label>
+                            <textarea id="message" name="message" rows="4" required placeholder="Looking for a new site, fixing an old one, etc."></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary submit-btn">Request a Quote</button>
+                    </form>
+                    <div id="formSuccess" class="success-msg hidden">
+                        <h3>Message Sent!</h3>
+                        <p>Thanks for reaching out. We'll look over your details and get back to you within 24 hours.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container footer-content">
+            <p>&copy; 2026 Congress Bridge Creative. All rights reserved.</p>
+            <p>Proudly based in Austin, TX.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
