@@ -1,12 +1,13 @@
 :root {
-    --bg-dark: #121214;
-    --bg-surface: #1a1a1e;
-    --bg-card: #232329;
-    --primary-orange: #e05a2b; 
-    --primary-orange-hover: #f36c3d;
-    --text-main: #f5f5f7;
-    --text-muted: #a1a1aa;
-    --border-color: #2a2a32;
+    /* Colors sampled directly from IMG_9950.jpg */
+    --bg-dark: #fbf3eb;           /* The main logo background cream color */
+    --bg-surface: #f5eae0;        /* Slightly darker cream for section depth */
+    --bg-card: #ffffff;           /* Clean white for high-contrast text cards */
+    --primary-orange: #d96b43;    /* The exact muted sunset orange from the logo */
+    --primary-orange-hover: #c25832;
+    --text-main: #231f20;         /* The deep charcoal/black from the logo lines */
+    --text-muted: #5e5854;        /* Softened charcoal for secondary text */
+    --border-color: #e3d5c8;      /* Subtle cream-toned borders */
     --transition: all 0.3s ease;
 }
 
@@ -36,7 +37,7 @@ body {
 /* UI Elements */
 .btn-primary {
     background-color: var(--primary-orange);
-    color: white;
+    color: #fbf3eb;               /* Keeps button text matching the cream theme */
     padding: 0.75rem 1.5rem;
     border-radius: 6px;
     text-decoration: none;
@@ -59,7 +60,7 @@ body {
     border-radius: 6px;
     text-decoration: none;
     font-weight: 600;
-    border: 1px solid var(--border-color);
+    border: 1px solid var(--text-main); /* Match the strong charcoal branding */
     transition: var(--transition);
     display: inline-block;
     text-align: center;
@@ -67,6 +68,7 @@ body {
 
 .btn-secondary:hover {
     border-color: var(--primary-orange);
+    color: var(--primary-orange);
 }
 
 .section-title {
@@ -86,7 +88,7 @@ body {
 
 /* Navbar */
 .navbar {
-    background-color: rgba(18, 18, 20, 0.95);
+    background-color: rgba(251, 243, 235, 0.95); /* Semi-transparent logo cream */
     backdrop-filter: blur(8px);
     border-bottom: 1px solid var(--border-color);
     position: sticky;
@@ -197,7 +199,7 @@ body {
     max-width: 320px;
     height: auto; 
     border-radius: 16px;
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 10px 25px rgba(35, 31, 32, 0.15); /* Softer shadow for light mode */
     object-fit: contain;
 }
 
@@ -218,6 +220,7 @@ body {
     padding: 2rem;
     border-radius: 8px;
     border: 1px solid var(--border-color);
+    box-shadow: 0 4px 12px rgba(35, 31, 32, 0.04);
 }
 
 .service-card h3 {
@@ -229,7 +232,7 @@ body {
     font-size: 0.95rem;
 }
 
-/* --- Dynamically Resizing Portfolio Section --- */
+/* Portfolio Section */
 .portfolio {
     padding: clamp(4rem, 8vw, 6rem) 0;
 }
@@ -238,25 +241,25 @@ body {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 1.5rem;
-    align-items: start; /* CRITICAL: Prevents cards from stretching to match the tallest sibling */
+    align-items: start; 
 }
 
 .portfolio-item {
-    background-color: var(--bg-surface);
+    background-color: var(--bg-card);
     border-radius: 8px;
     overflow: hidden;
     border: 1px solid var(--border-color);
     display: flex;
     flex-direction: column;
+    box-shadow: 0 4px 12px rgba(35, 31, 32, 0.04);
 }
 
-/* Automatically resizes perfectly to any uploaded image */
 .port-img-mock {
     width: 100%;
-    height: auto; /* Scales dynamically based on the image size */
-    max-height: 400px; /* Optional safety net: prevents super-tall vertical images from looking huge */
-    background-color: #2a2a32; 
-    object-fit: contain; /* Shows the full layout without aggressive cropping */
+    height: auto; 
+    max-height: 400px; 
+    background-color: var(--bg-surface); 
+    object-fit: contain; 
     border-bottom: 1px solid var(--border-color);
     display: block;
 }
@@ -275,6 +278,7 @@ body {
     font-size: 0.9rem;
     margin-top: 0.25rem;
 }
+
 /* Contact Details */
 .contact-section {
     background-color: var(--bg-surface);
@@ -301,6 +305,7 @@ body {
     border-radius: 12px;
     border: 1px solid var(--border-color);
     width: 100%;
+    box-shadow: 0 6px 18px rgba(35, 31, 32, 0.05);
 }
 
 .form-group {
