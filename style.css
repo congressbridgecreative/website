@@ -405,3 +405,7 @@ footer {
         gap: 0.5rem;
     }
 }
+.client-link:hover {
+    color: var(--primary-orange-hover) !important;
+    text-decoration: underline !important;
+}
